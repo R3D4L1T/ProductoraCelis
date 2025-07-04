@@ -1,0 +1,24 @@
+﻿/* Estilos para la imagen y el texto debajo */
+.producto-imagen {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.imagen-grande {
+    width: 300px; /* Puedes ajustar el tamaño según lo necesites */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.producto-nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.producto-descripcion {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}

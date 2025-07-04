@@ -1,0 +1,143 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    margin: 2rem;
+    color: #333;
+}
+
+.form-reporte {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+    .form-reporte div {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    .form-reporte label {
+        margin-bottom: 0.3rem;
+    }
+
+    .form-reporte input[type="date"] {
+        padding: 0.4rem 0.6rem;
+        border-radius: 6px;
+        border: 1.5px solid #ccc;
+        transition: border-color 0.3s ease;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+        .form-reporte input[type="date"]:focus {
+            outline: none;
+            border-color: #0078d7;
+            box-shadow: 0 0 6px #0078d7aa;
+        }
+
+    .form-reporte button {
+        padding: 0.5rem 1.5rem;
+        background: #0078d7;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.15s ease;
+    }
+
+        .form-reporte button:hover {
+            background: #005ea2;
+            transform: scale(1.05);
+        }
+
+        .form-reporte button:active {
+            transform: scale(0.95);
+        }
+
+.table-reporte {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    animation: slideIn 0.8s ease forwards;
+}
+
+    .table-reporte thead {
+        background: #0078d7;
+        color: white;
+        text-align: left;
+    }
+
+    .table-reporte th, .table-reporte td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table-reporte tbody tr:hover {
+        background-color: #f1f9ff;
+        transition: background-color 0.3s ease;
+    }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-download {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-download:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+
+    .btn-download:active {
+        transform: scale(0.97);
+    }

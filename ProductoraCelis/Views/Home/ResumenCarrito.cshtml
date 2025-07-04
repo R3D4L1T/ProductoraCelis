@@ -1,0 +1,84 @@
+﻿@model List<ProductoraCelis.Models.Carrito>
+
+@{
+    Layout = null;
+    ViewData["Title"] = "Resumen del Carrito";
+}
+<link rel="stylesheet" href="~/css/Header.css" />
+<link rel="stylesheet" href="~/css/ResumenCarrito.css" />
+
+<header class="header">
+    <img src="~/src/icon/franja.jpg" alt="Franja decorativa" class="franja" />
+    <a class="logo">
+        <img src="~/src/icon/logo.png" />
+        <h1>Productora Celis</h1>
+    </a>
+    <nav>
+        <ul class="center-links">
+            <li><a asp-area="" asp-controller="Home" asp-action="Productos">Regresar a Productos</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Salir">Salir</a></li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+</header>
+
+@{
+    decimal total = 0;
+}
+
+<h2>Resumen del Carrito</h2>
+<form method="post" asp-action="LimpiarCarrito" asp-controller="Home" style="margin-top: 20px;">
+    <button type="submit" class="btn btn-danger">Limpiar Carrito</button>
+</form>
+
+@if (Model == null || !Model.Any())
+{
+    <p class="empty-message">Tu carrito está vacío.</p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Precio Unitario</th>
+                <th>Subtotal</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var subtotal = item.Precio * item.Cantidad;
+                total += subtotal;
+                <tr>
+                    <td data-label="Producto">@item.Nombre</td>
+                    <td data-label="Cantidad">@item.Cantidad</td>
+                    <td data-label="Precio Unitario">@item.Precio.ToString("C")</td>
+                    <td data-label="Subtotal">@subtotal.ToString("C")</td>
+                    <td data-label="Acciones">
+                        <form method="post" asp-action="DisminuirCantidad" asp-controller="Home" style="display:inline;">
+                            <input type="hidden" name="idProducto" value="@item.IdProducto" />
+                            <button type="submit" class="btn btn-sm btn-warning" title="Disminuir cantidad">-</button>
+                        </form>
+
+                        <form method="get" asp-action="AgregarAlCarrito" asp-controller="Home" style="display:inline;">
+                            <input type="hidden" name="id" value="@item.IdProducto" />
+                            <button type="submit" class="btn btn-sm btn-success" title="Aumentar cantidad">+</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="text-right"><strong>Total:</strong></td>
+                <td colspan="2">@total.ToString("C")</td>
+            </tr>
+        </tfoot>
+    </table>
+    <a href="@Url.Action("RealizarPago", "Home")" class="btn btn-primary mt-3">Realizar Pago</a>
+}
+
+<script src="~/js/Header.js"></script>

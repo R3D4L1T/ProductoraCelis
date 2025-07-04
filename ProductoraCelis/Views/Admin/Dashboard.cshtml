@@ -1,0 +1,272 @@
+﻿@model ProductoraCelis.ViewsModes.AdminVM;
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="~/css/Dashboard.css" />
+    <link rel="stylesheet" href="~/css/Lista.css" />
+    </head>
+ <body>
+    <header class="header">
+        <img src="/src/icon/franja.jpg" alt="Franja decorativa" class="franja" />
+        <div class="logo">
+            <a class="logo">
+                <img src="/src/icon/logo.png" />
+                <h1></h1>
+                <h1>Panel de Control - Administrador: 
+
+                    @if (User.Identity!.IsAuthenticated)
+                    {
+                        <span>@User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Name)?.Value</span>
+                    }
+                </h1>
+            </a>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="nombre">PRODUCTORA CELIS</div>
+        <ul>
+            <li><a href="#inicio" class="tab-link" data-tab="inicio"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#reporte-ventas" class="tab-link" data-tab="reporte-ventas"><i class="fas fa-chart-line"></i>Ver Reporte</a></li>
+            <li><a href="#clientes" class="tab-link" data-tab="clientes"><i class="fas fa-users"></i> Clientes</a></li>
+            <li><a href="#productos" class="tab-link" data-tab="productos"><i class="fas fa-box"></i> Productos</a></li>
+            <li><a href="#proveedores" class="tab-link" data-tab="proveedores"><i class="fas fa-truck"></i> Proveedores</a></li>
+            <li><a href="#salir" class="tab-link" data-tab="salir"><i class="fas fa-sign-out-alt"></i> Salir</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div id="inicio" class="tab-content">
+            <h2>Bienvenido al Sistema de Ventas</h2>
+            <p>Seleccione una opción del menú para comenzar.</p>
+        </div>
+        <div id="ventas" class="tab-content">
+            <h2>Registro de Ventas</h2>
+            <p>Aquí puede registrar nuevas ventas y ver el historial de transacciones.</p>
+        </div>
+        <!--REPORTEW DE VENTAS-->
+        <div id="reporte-ventas" class="tab-content">
+
+            <div>
+                
+                <a asp-controller="Admin" asp-action="ReporteCarrito">Ver Reporte de Ventas</a>
+            </div>
+            <div>
+                <hr/>
+                <hr />
+                <h4>Total de Clientes: @Model.TotalClientes</h4>
+              <hr />
+                <h4>Total de Productos:  @Model.TotalProductos</h4>
+                <hr />
+                <h4>Total de Proveedores: @Model.TotalProveedores</h4>
+                <hr />
+            </div>
+        </div>
+
+        <!-- CLIENTESSSSSSSSSSSSSSSSSSSSS-->
+        <div id="clientes" class="tab-content">
+            <h2>Gestion de Clientes Mayoristas</h2>
+            <div>
+                <strong>Total de Clientes: @Model.TotalClientes</strong>
+                <a asp-controller="Admin" asp-action="Registrar_Cliente">Agregar nuevo Cliente</a>
+            </div>
+            <table class="tabla_clientes">
+                
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Dni</th>
+                        <th>Celular</th>
+                        <th>Dirección</th>
+                        <th>Fecha Registro</th>
+                        <th>Descripción</th>
+                        <th>Activo</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Clientes)
+                    {
+                        <tr>
+                            <td>@item.IdClientes</td>
+                            <td>@item.Nombres</td>
+                            <td>@item.Apellidos</td>
+                            <td>@item.Dni</td>
+                            <td>@item.Celular</td>
+                            <td>@item.Direccion</td>
+                            <td>@item.FechaRegistro.ToString()</td>
+                            <td>@item.Descripcion</td>
+                            <td>@(item.Estado ? "Si" : "No")</td>
+                            <td>@item.Email</td>
+                            <td>
+                                <a asp-controller="Admin"
+                                   asp-action="Editar_Cliente"
+                                   asp-route-id="@item.IdClientes"
+                                   class="btn-editar">Editar</a>
+
+                                <a asp-controller="Admin"
+                                   asp-action="Eliminar_Clientes"
+                                   asp-route-id="@item.IdClientes"
+                                   class="btn_eliminar" onclick="return confirm('¿Seguro que desea eliminar este cliente?');">
+                                    Eliminar
+                                </a>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ---------------------PRODUCTOS-------------------->
+        <div id="productos" class="tab-content">
+            <h2>Gestion de Productos</h2>
+            <div>
+                <div>
+                    <strong>Total de Productos:  @Model.TotalProductos</strong>
+                    <a asp-controller="Admin" asp-action="Registrar_Producto">Agregar nuevo Producto</a>
+                </div>
+
+                <table class="tabla_clientes">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Categoria</th>
+                            <th>Descripcion</th>
+                            <th>Stock</th>
+                            <th>Fecha de producccion</th>
+                            <th>Fecha de vencimiento</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                            <th>Imagen</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Productos)
+                        {                         
+                            <tr>
+                                <td>@item.IdProducto</td>
+                                <td>@item.Nombre</td>
+                                <td>@item.Categoria</td>
+                                <td>@item.Descripcion</td>
+                                <td>@item.Stock</td>
+                                <td>@item.FechaProduccion.ToString()</td>
+                                <td>@item.FechaVencimiento.ToString()</td>
+                                <td>@item.Precio</td>
+                                <td>@(item.Estado ? "Si" : "No")</td>
+                                <td>
+                                        @if (!string.IsNullOrEmpty(item.UrlImagen))
+                                        {
+                                        <img src="@item.UrlImagen" alt="Imagen del producto" style="width: 50px; height: 50px;" />
+                                        }else
+                                        {
+                                        <span>Sin imagen</span>
+                                        }
+                                </td>
+                                <td>
+                                    <a asp-controller="Admin"
+                                       asp-action="Editar_Producto"
+                                       asp-route-id="@item.IdProducto"
+                                       class="btn-editar">Editar</a>
+
+                                    <a asp-controller="Admin"
+                                       asp-action="Eliminar_Producto"
+                                       asp-route-id="@item.IdProducto"
+                                       class="btn_eliminar" onclick="return confirm('¿Seguro que desea eliminar este Producto?'); ">
+                                        Eliminar
+                                    </a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody> 
+                </table>
+            </div>
+        </div>
+
+        <!---------------------------------- Proveedores------------------------>
+        <div id="proveedores" class="tab-content">
+            <h2>Gestión de Proveedores</h2>
+            <div>
+                <strong>Total de Proveedores: @Model.TotalProveedores</strong>
+                <a asp-controller="Admin" asp-action="Registrar_Proveedor">Agregar nuevo Proveedor</a>
+            </div><table class="tabla_clientes">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Dni</th>
+                        <th>Celular</th>
+                        <th>Dirección</th>
+                        <th>Fecha de Registro</th>
+                        <th>Descripción</th>
+                        <th>Tipo</th>
+                        <th>Activo</th>
+                        <th>Email</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Proveedores)
+                    {
+                        <tr>
+                            <td>@item.IdProveedor</td>
+                            <td>@item.Nombres</td>
+                            <td>@item.Apellidos</td>
+                            <td>@item.Dni</td>
+                            <td>@item.Celular</td>
+                            <td>@item.Direccion</td>
+                            <td>@item.FechaRegistro.ToString()</td>
+                            <td>@item.Descripcion</td>
+                            <td>@item.Tipo</td>
+                            <td>@(item.Estado ? "Si" : "No")</td>
+                            <td>@item.Email</td>
+                            <td>
+                                <a asp-controller="Admin"
+                                   asp-action="Editar_Proveedor"
+                                   asp-route-id="@item.IdProveedor"
+                                   class="btn-editar">Editar</a>
+
+                                <a asp-controller="Admin"
+                                   asp-action="Eliminar_Proveedor"
+                                   asp-route-id="@item.IdProveedor"
+                                   class="btn_eliminar" onclick="return confirm('¿Seguro que desea eliminar este Proveedor?'); " >
+                                    Eliminar
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div id="salir" class="tab-content">
+            <h2>Cerrar Sesión</h2>
+            <p>¿Está seguro que desea salir del sistema?</p>
+            <a asp-controller="Home" asp-action="Salir"onclick="alert('Sesión cerrada')">Confirmar salida</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="~/js/Dashboard.js"></script>
+    @section Scripts {
+        <script>
+            function confirmar() {
+                return confirm("¿Estás seguro de que deseas Eliminar?");
+            }
+
+        </script>
+    }
+ </body>
+</html>
+
+
+
+

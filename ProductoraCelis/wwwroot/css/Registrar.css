@@ -1,0 +1,100 @@
+﻿/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin-bottom: 15px;
+}
+
+/* Form Wrapper */
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Header */
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333333;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #555555;
+}
+
+/* Input Fields */
+input.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f8f8f8;
+}
+
+    /* Input Focus */
+    input.form-control:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        outline: none;
+    }
+
+/* Checkbox */
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Buttons */
+button.btn-guardar, a.btn-volver {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1em;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Guardar Button */
+button.btn-guardar {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+    button.btn-guardar:hover {
+        background-color: #0056b3;
+    }
+
+/* Volver Button */
+a.btn-volver {
+    background-color: #6c757d;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+    a.btn-volver:hover {
+        background-color: #5a6268;
+    }
+
+/* Error State */
+input:required:invalid {
+    border-color: #e3342f;
+}

@@ -1,0 +1,180 @@
+﻿@model IEnumerable<ProductoraCelis.Models.Producto>
+@{
+    Layout = null;
+}
+<link rel="stylesheet" href="~/css/Productos.css" />
+<link rel="stylesheet" href="~/css/Header.css" />
+<header class="header">
+    <img src="~/src/icon/franja.jpg" alt="Franja decorativa" class="franja" />
+    <a class="logo">
+        <img src="~/src/icon/logo.png" />
+        <h1>Productora Celis</h1>
+    </a>
+    <nav>
+        <ul class="center-links">
+            <li><a asp-area="" asp-controller="Home" asp-action="Productos">Nuestros Productos</a></li>
+            <li><a asp-area="" asp-controller="Home" asp-action="Salir">Salir</a> </li>
+        </ul>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </nav>
+</header>
+
+
+<nav class="nav">
+    <ul>
+        <li><button onclick="mostrarSeccion('leche')">Leche</button></li>
+        <li><button onclick="mostrarSeccion('queso')">Queso</button></li>
+        <li><button onclick="mostrarSeccion('yogurt')">Yogurt</button></li>
+        <li><button onclick="mostrarSeccion('mantequilla')">Mantequilla</button></li>
+    </ul>
+</nav>
+
+
+    <div class="container mt-4 fade-in">
+        <form method="post" asp-action="AgregarVariosAlCarrito">
+    <!-- Sección Leche -->
+    <section id="leche" class="producto" style="display: none;">
+        <h2>Leche</h2>
+        <div class="combos">
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    var producto = Model.ElementAt(i);
+                    if (producto.Categoria?.Trim().ToLower() == "leche")
+                    {
+                        <div class="combo">
+                            <img src="@producto.UrlImagen" alt="Imagen del producto" />
+                            <p>@producto.Nombre</p>
+                            <p>@producto.Descripcion</p>
+                            <p>Fp: @producto.FechaProduccion</p>
+                            <p>Fv: @producto.FechaVencimiento</p>
+                            <p>Stock: @producto.Stock</p>
+                            <p>@producto.Precio.ToString("C")</p>
+
+                            <!-- Estos inputs son los que se envían al controlador -->
+                            <input type="hidden" name="Items[@i].IdProducto" value="@producto.IdProducto" />
+                            <input type="hidden" name="Items[@i].Nombre" value="@producto.Nombre" />
+                            <input type="hidden" name="Items[@i].Categoria" value="@producto.Categoria" />
+                            <input type="hidden" name="Items[@i].Precio" value="@producto.Precio" />
+                            <input type="hidden" name="Items[@i].UrlImagen" value="@producto.UrlImagen" />
+                            <input type="number" name="Items[@i].Cantidad" min="0" max="@producto.Stock" value="0" class="form-control mt-2" />
+                        </div>
+                    }
+                }
+
+        </div>
+    </section>
+
+    <!-- Sección Queso -->
+    <section id="queso" class="producto" style="display: none;">
+        <h2>Queso</h2>
+        <div class="combos">
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    var producto = Model.ElementAt(i);
+                    if (producto.Categoria?.Trim().ToLower() == "queso")
+                    {
+                        <div class="combo">
+                            <img src="@producto.UrlImagen" alt="Imagen del producto" />
+                            <p>@producto.Nombre</p>
+                            <p>@producto.Descripcion</p>
+                            <p>Fp: @producto.FechaProduccion</p>
+                            <p>Fv: @producto.FechaVencimiento</p>
+                            <p>Stock: @producto.Stock</p>
+                            <p>@producto.Precio.ToString("C")</p>
+
+                            <!-- Estos inputs son los que se envían al controlador -->
+                            <input type="hidden" name="Items[@i].IdProducto" value="@producto.IdProducto" />
+                            <input type="hidden" name="Items[@i].Nombre" value="@producto.Nombre" />
+                            <input type="hidden" name="Items[@i].Categoria" value="@producto.Categoria" />
+                            <input type="hidden" name="Items[@i].Precio" value="@producto.Precio" />
+                            <input type="hidden" name="Items[@i].UrlImagen" value="@producto.UrlImagen" />
+                            <input type="number" name="Items[@i].Cantidad" min="0" max="@producto.Stock" value="0" class="form-control mt-2" />
+                        </div>
+                    }
+                }
+
+        </div>
+    </section>
+
+    <!-- Sección Yogurt -->
+        <section id="yogurt" class="producto" style="display: none;">
+            <h2>Yogurt</h2>
+            <div class="combos">
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    var producto = Model.ElementAt(i);
+                    if (producto.Categoria?.Trim().ToLower() == "yogurt")
+                    {
+                        <div class="combo">
+                            <img src="@producto.UrlImagen" alt="Imagen del producto" />
+                            <p>@producto.Nombre</p>
+                            <p>@producto.Descripcion</p>
+                            <p>Fp: @producto.FechaProduccion</p>
+                            <p>Fv: @producto.FechaVencimiento</p>
+                            <p>Stock: @producto.Stock</p>
+                            <p>@producto.Precio.ToString("C")</p>
+
+                            <!-- Estos inputs son los que se envían al controlador -->
+                            <input type="hidden" name="Items[@i].IdProducto" value="@producto.IdProducto" />
+                            <input type="hidden" name="Items[@i].Nombre" value="@producto.Nombre" />
+                            <input type="hidden" name="Items[@i].Categoria" value="@producto.Categoria" />
+                            <input type="hidden" name="Items[@i].Precio" value="@producto.Precio" />
+                            <input type="hidden" name="Items[@i].UrlImagen" value="@producto.UrlImagen" />
+                            <input type="number" name="Items[@i].Cantidad" min="0" max="@producto.Stock" value="0" class="form-control mt-2" />
+                        </div>
+                    }
+                }
+
+            </div>
+        </section>
+
+
+    <!-- Sección Mantequilla -->
+    <section id="mantequilla" class="producto" style="display: none;">
+        <h2>Mantequilla</h2>
+        <div class="combos">
+                @for (int i = 0; i < Model.Count(); i++)
+                {
+                    var producto = Model.ElementAt(i);
+                    if (producto.Categoria?.Trim().ToLower() == "mantequilla")
+                    {
+                        <div class="combo">
+                            <img src="@producto.UrlImagen" alt="Imagen del producto" />
+                            <p>@producto.Nombre</p>
+                            <p>@producto.Descripcion</p>
+                            <p>Fp: @producto.FechaProduccion<p/>
+                            <p>Fv: @producto.FechaVencimiento</p>
+                            <p>Stock: @producto.Stock</p>
+                            <p>@producto.Precio.ToString("C")</p>
+
+                            <!-- Estos inputs son los que se envían al controlador -->
+                            <input type="hidden" name="Items[@i].IdProducto" value="@producto.IdProducto" />
+                            <input type="hidden" name="Items[@i].Nombre" value="@producto.Nombre" />
+                            <input type="hidden" name="Items[@i].Categoria" value="@producto.Categoria" />
+                            <input type="hidden" name="Items[@i].Precio" value="@producto.Precio" />
+                            <input type="hidden" name="Items[@i].UrlImagen" value="@producto.UrlImagen" />
+                            <input type="number" name="Items[@i].Cantidad" min="0" max="@producto.Stock" value="0" class="form-control mt-2" />
+                        </div>
+                    }
+                }
+
+        </div>
+    </section>
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn-agregar">Agregar seleccionados al carrito</button>
+        </div>
+    </form>
+
+</div>
+
+<script>
+    function mostrarSeccion(id) {
+        const secciones = document.querySelectorAll('.producto');
+        secciones.forEach(seccion => seccion.style.display = 'none');
+
+        const seccionSeleccionada = document.getElementById(id);
+        if (seccionSeleccionada) {
+            seccionSeleccionada.style.display = 'block';
+        }
+    }
+</script>
