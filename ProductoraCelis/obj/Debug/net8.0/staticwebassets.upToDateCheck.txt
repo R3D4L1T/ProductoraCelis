@@ -1,0 +1,155 @@
+wwwroot\comprobantes\Comprobante_1_20250528143709.pdf
+wwwroot\comprobantes\Comprobante_1_20250528143908.pdf
+wwwroot\comprobantes\Comprobante_1_20250528144848.pdf
+wwwroot\css\Comprobante.css
+wwwroot\css\Dashboard.css
+wwwroot\css\Footer.css
+wwwroot\css\franja.css
+wwwroot\css\Header.css
+wwwroot\css\Lista.css
+wwwroot\css\Productos.css
+wwwroot\css\RealizarPago.css
+wwwroot\css\Registrar.css
+wwwroot\css\Reporte.css
+wwwroot\css\responsive-tables.css
+wwwroot\css\ResumenCarrito.css
+wwwroot\css\site.css
+wwwroot\css\StyleSheet.css
+wwwroot\css\theme.css
+wwwroot\favicon.ico
+wwwroot\images\leche descremada_65d5020c-73b4-4058-bc79-fd3493b8d678.jpeg
+wwwroot\images\leche deslactosa_41c41885-4cd2-4009-b2bd-aa4f6318185e.jpeg
+wwwroot\images\leche deslactosa_478ac3c4-fe5b-41c8-88ff-ade7fe0d0af6.jpeg
+wwwroot\images\leche deslactosa_ccf50741-8bb2-466c-948a-b10cb9592722.jpeg
+wwwroot\images\leche evaporada_a11a0810-bedc-4bca-abd4-1ae71babf44e.jpeg
+wwwroot\images\leche light_0ff5e60b-b8ac-4b59-8161-bbfe39f8147d.jpeg
+wwwroot\images\leche light_2e0665e0-7730-44fc-9cc0-7aca8356d9b7.jpeg
+wwwroot\images\leche_73f79dcc-6e95-4824-a140-a9778e0e24b1.jpeg
+wwwroot\images\leche_c1349043-a2b4-485b-986d-6c7de72e517b.jpeg
+wwwroot\images\leche_c85e8772-ce20-43e5-9501-50d27a5b3309.jpeg
+wwwroot\images\mantequilla  sin sal_f38500a2-8153-46f9-863c-586a2ce330be.jpeg
+wwwroot\images\mantequilla con sal_07277602-8421-4b01-aed2-34963683dae6.jpeg
+wwwroot\images\mantequilla con sal_acf655b9-de6e-4cf3-9ba7-f3223c9b0096.jpeg
+wwwroot\images\mantequilla sin sal_37286d55-260e-4ef5-bf79-5fc7662bcc9a.jpeg
+wwwroot\images\mantequilla sin sal_7f895a84-b0e8-48a6-9bd7-c06fc847a1b3.jpeg
+wwwroot\images\mantequilla sin sal_cbab1b99-b62e-4b71-89a4-8714ae2a1a0c.jpeg
+wwwroot\images\mantequilla sin sal_ceed0bb5-c47d-4edd-a460-f36382dec31d.jpeg
+wwwroot\images\mantequilla_651af5fb-e675-47ef-bd6e-fb38271e8a39.jpeg
+wwwroot\images\mantequilla_f9452481-4a2c-4d2d-8b2f-c079560ff4fe.jpeg
+wwwroot\images\queso parmesano_d20fab76-bbf7-454c-8823-3a19e7115919.jpeg
+wwwroot\images\queso parmesano_d20fab76-bbf7-454c-8823-3a19e7115919_22fe2cf4-fc09-4400-b8ea-94225a0de054.jpeg
+wwwroot\images\queso parmesano_fe4d504d-6dfd-4963-a017-d09d62a74ee6.jpeg
+wwwroot\images\queso suiso_06c49ad9-f9aa-4772-9528-7cde8c008038.jpeg
+wwwroot\images\queso suiso_372200d8-e1c4-486b-b72e-26e01018fb0e.jpeg
+wwwroot\images\queso suiso_cae7f405-4e58-47ef-a71b-9dd29d835731.jpeg
+wwwroot\images\queso_1b0ec6f2-c48e-4dc3-bec9-7915cdde1917.jpeg
+wwwroot\images\queso_29ce0558-ed4c-4bb2-9b7f-509a7a0b5e0d.jpeg
+wwwroot\images\queso_690a0761-a274-4fa7-a879-968e53214cce.jpeg
+wwwroot\images\queso_81a27332-1dc2-48c1-851b-583dde1abe17.jpeg
+wwwroot\images\queso_a72c864d-08fc-4ce4-8823-906b854cf4b0.jpeg
+wwwroot\images\yogurt fresa_19b3d15c-efa7-4ec4-9ffb-1f8b6e6922c8.jpeg
+wwwroot\images\yogurt mango_3e878ef2-09de-4c85-9513-bebd649b2251.jpeg
+wwwroot\images\yogurt mango_d262b9cc-37c3-4295-859f-bce41db18ecd.jpeg
+wwwroot\images\yogurt5_7173521a-0f4f-4543-94f6-019b47d03a18.jpeg
+wwwroot\images\yogurtfresa_4b9a818a-0e06-44aa-95e5-05e972a9f13a.jpg
+wwwroot\images\yogurtfresa_6b616447-cde0-4a0d-885b-f39c8cdbf19b.jpg
+wwwroot\images\yogurtfresa_7893e716-53d2-439f-ae40-fc858529b558.jpg
+wwwroot\images\yogurtfresa_b0d7d3a2-4a24-4348-bcf6-1f67c3dabf1a.jpg
+wwwroot\images\yogurtfresa_e178f32c-97cd-4361-b65b-3833c5131ce2.jpg
+wwwroot\images\yogurt_61034c3e-d03b-4164-bf30-fc2ab59322b6.jpeg
+wwwroot\js\Carrito.js
+wwwroot\js\Carrucel.js
+wwwroot\js\Dashboard.js
+wwwroot\js\Header.js
+wwwroot\js\Pago.js
+wwwroot\js\Productos.js
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\slick\slick-theme.css
+wwwroot\slick\slick.min.js
+wwwroot\slick\slick.scss
+wwwroot\src\afiches\afiche1.jpeg
+wwwroot\src\afiches\afiche2.jpeg
+wwwroot\src\afiches\afiche3.jpeg
+wwwroot\src\afiches\afiche4.jpeg
+wwwroot\src\afiches\afiche5.jpeg
+wwwroot\src\icon\franja.jpg
+wwwroot\src\icon\logo.png
+wwwroot\src\produc\leche descremada.jpeg
+wwwroot\src\produc\leche deslactosa.jpeg
+wwwroot\src\produc\leche evaporada.jpeg
+wwwroot\src\produc\leche light.jpeg
+wwwroot\src\produc\leche.jpeg
+wwwroot\src\produc\mantequilla  sin sal.jpeg
+wwwroot\src\produc\mantequilla con sal.jpeg
+wwwroot\src\produc\mantequilla sin sal.jpeg
+wwwroot\src\produc\mantequilla.jpeg
+wwwroot\src\produc\queso con pecanas.jpeg
+wwwroot\src\produc\queso mantecoso.jpeg
+wwwroot\src\produc\queso mosarella.jpeg
+wwwroot\src\produc\queso parmesano.jpeg
+wwwroot\src\produc\queso suiso.jpeg
+wwwroot\src\produc\queso.jpeg
+wwwroot\src\produc\WhatsApp Image 2024-11-18 at 5.23.55 PM.jpeg
+wwwroot\src\produc\yogurt arandano.jpeg
+wwwroot\src\produc\yogurt fresa.jpeg
+wwwroot\src\produc\yogurt mango.jpeg
+wwwroot\src\produc\yogurt.jpeg
+wwwroot\src\produc\yogurt5.jpeg
+wwwroot\css\Carrucel.css

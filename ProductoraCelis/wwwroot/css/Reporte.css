@@ -1,0 +1,153 @@
+﻿/* ========== Estilos Generales ========== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 2rem;
+    color: #333;
+}
+
+/* ========== Formulario de Reporte ========== */
+.form-reporte {
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-end;
+    max-width: 650px;
+    margin-bottom: 2rem;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+    .form-reporte div {
+        display: flex;
+        flex-direction: column;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: #555;
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .form-reporte label {
+        margin-bottom: 0.3rem;
+    }
+
+    .form-reporte input[type="date"] {
+        padding: 0.5rem 0.8rem;
+        border-radius: 6px;
+        border: 1.5px solid #ccc;
+        font-size: 1rem;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        background-color: #fff;
+    }
+
+        .form-reporte input[type="date"]:focus {
+            outline: none;
+            border-color: #0078d7;
+            box-shadow: 0 0 6px #0078d7aa;
+        }
+
+    /* ========== Botón del Formulario ========== */
+    .form-reporte button {
+        padding: 0.6rem 1.5rem;
+        background-color: #0078d7;
+        border: none;
+        border-radius: 6px;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.15s ease;
+    }
+
+        .form-reporte button:hover {
+            background-color: #005ea2;
+            transform: scale(1.05);
+        }
+
+        .form-reporte button:active {
+            transform: scale(0.95);
+        }
+
+/* ========== Tabla del Reporte ========== */
+.table-reporte {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    animation: slideIn 0.8s ease forwards;
+}
+
+    .table-reporte thead {
+        background-color: #0078d7;
+        color: #fff;
+        text-align: left;
+    }
+
+    .table-reporte th,
+    .table-reporte td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .table-reporte tbody tr:hover {
+        background-color: #f1f9ff;
+        transition: background-color 0.3s ease;
+    }
+
+/* ========== Botón de Descarga ========== */
+.btn-container {
+    text-align: center;
+    margin-top: 24px;
+}
+
+.btn-download {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-download:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+
+    .btn-download:active {
+        transform: scale(0.97);
+    }
+
+/* ========== Animaciones ========== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

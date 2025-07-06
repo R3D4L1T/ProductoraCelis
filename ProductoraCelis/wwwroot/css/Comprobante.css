@@ -1,0 +1,219 @@
+﻿/* Comprobante de Compra - estilo tipo boleta/recibo */
+
+body {
+    background: #f5f6fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+.container {
+    max-width: 720px;
+    background: #fff;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    position: relative;
+    animation: slideFadeIn 0.8s ease forwards;
+    border: 2px dashed #2980b9;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #2980b9;
+    animation: fadeInDown 1s ease forwards;
+}
+
+.separator {
+    border: none;
+    border-top: 3px solid #2980b9;
+    margin-bottom: 25px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: scaleWidth 1s ease forwards;
+}
+
+.info-compra {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    animation: fadeIn 1.2s ease forwards;
+}
+
+    .info-compra p {
+        margin: 6px 0;
+    }
+
+.table-receipt {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+    .table-receipt thead tr {
+        background-color: #2980b9;
+        color: white;
+        font-weight: 700;
+    }
+
+    .table-receipt th,
+    .table-receipt td {
+        padding: 12px 15px;
+        border: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .table-receipt tbody tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+.total-label {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #34495e;
+}
+
+.total-amount {
+    font-size: 1.3rem;
+    font-weight: 900;
+    color: #27ae60;
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-download {
+    background-color: #27ae60;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.4);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .btn-download:hover {
+        background-color: #219150;
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(33, 145, 80, 0.7);
+    }
+
+/* Animaciones */
+
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleWidth {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+
+    to {
+        width: 60%;
+        opacity: 1;
+    }
+}
+
+
+/* =================== */
+/*     MEDIA QUERIES   */
+/* =================== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1.5rem;
+    }
+
+    .table-receipt th, .table-receipt td {
+        padding: 0.625rem;
+        font-size: 0.95rem;
+    }
+
+    .btn-download {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.05rem;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .table-receipt {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+        .table-receipt th,
+        .table-receipt td {
+            font-size: 0.85rem;
+            padding: 0.5rem;
+        }
+
+    .total-label,
+    .total-amount {
+        font-size: 1rem;
+    }
+
+    .btn-download {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+}

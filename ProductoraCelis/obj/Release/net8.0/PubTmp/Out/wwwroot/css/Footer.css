@@ -1,0 +1,93 @@
+﻿.footer {
+    background: linear-gradient(rgb(255, 140, 169), rgb(4, 4, 37));
+    padding: 20px 0;
+    font-size: 17px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Para distribuir los elementos */
+    flex-wrap: wrap; /* Permitir que se ajuste en pantallas pequeñas */
+}
+
+    .footer-content h5 {
+        margin: 0 20px; /* Separación entre el texto y las redes sociales */
+    }
+
+.redes-sociales {
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces de redes sociales */
+}
+
+    .redes-sociales a {
+        margin-right: 30px;
+        text-decoration: none;
+    }
+
+.bi {
+    font-size: 24px;
+}
+
+.bi-facebook {
+    color: blue;
+}
+
+    .bi-facebook:hover {
+        color: rgb(255, 11, 11);
+    }
+
+.bi-envelope {
+    color: rgb(251, 255, 24);
+}
+
+    .bi-envelope:hover {
+        color: rgb(255, 3, 3);
+    }
+
+.bi-whatsapp {
+    color: rgb(21, 247, 21);
+}
+
+    .bi-whatsapp:hover {
+        color: rgb(255, 19, 19);
+    }
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+    }
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .redes-sociales {
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .footer-content h5 {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .bi {
+        font-size: 20px;
+    }
+
+    .footer-content h5 {
+        font-size: 0.9rem;
+    }
+}

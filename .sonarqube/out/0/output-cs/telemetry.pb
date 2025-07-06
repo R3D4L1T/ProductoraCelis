@@ -1,0 +1,1 @@
+”R~C:\Users\USUARIO\Desktop\calidadsoftware\projectFINAL\ProyectoFinal2.0\ProyectoFinal2.0\ProductoraCelis\ProductoraCelis.csproj¢net8.0òCSharp12

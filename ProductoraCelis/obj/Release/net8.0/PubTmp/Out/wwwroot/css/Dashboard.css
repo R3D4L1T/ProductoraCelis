@@ -1,0 +1,231 @@
+﻿/* Definición de variables de color */
+:root {
+    --primary-color: #ff65b2; /* Color principal (mantiene el rosa) */
+    --secondary-color: #ff99cc; /* Amarillo verdoso */
+    --hover-color: rgba(255, 255, 255, 0.3);
+    --menu-text-color: black; /* Letras del menú negras */
+    --text-color: #000000; /* Todo el texto en negro */
+    --background-color: #d9d9d9; /* Fondo general plomo claro */
+    --table-header-bg: #b3d9ff; /* Azul claro para encabezados */
+    --table-row-alt: #e6f2ff; /* Azul aún más claro para filas impares */
+    --table-border-color: #000000; /* Líneas negras en tablas */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos generales */
+body,
+html {
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header .franja {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+    .header a {
+        text-decoration: none;
+        color: var(--text-color);
+        display: flex;
+        align-items: center;
+    }
+
+    .header h1 {
+        position: relative;
+        color: var(--text-color);
+        text-align: center;
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .header .logo img {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+.navbar {
+    background: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--menu-text-color) !important;
+}
+
+    .nav-link:hover {
+        color: var(--secondary-color) !important;
+    }
+
+.nombre {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid white;
+}
+
+.menu {
+    background: linear-gradient(to bottom, var(--primary-color), var(--primary-color), var(--secondary-color));
+    color: var(--menu-text-color);
+    height: 100vh;
+    left: 0;
+    overflow-y: auto;
+}
+
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .menu li {
+        padding: 5px;
+        border-bottom: 1px solid var(--hover-color);
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        color: var(--menu-text-color);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu i {
+        margin-right: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        padding: 10px;
+        margin-right: 10px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+        .menu ul li a:hover {
+            background-color: var(--hover-color);
+            color: var(--menu-text-color);
+            border-radius: 5px;
+        }
+
+.content {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.tab-content {
+    margin-left: 17%;
+    display: none;
+    padding: 0;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    color: var(--text-color);
+}
+
+    .tab-content.active {
+        display: block;
+    }
+
+/* ==== Tablas estilo pastel rosa ==== */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* Fondo blanco para la tabla */
+    color: var(--text-color);
+}
+
+    .table th {
+        background-color: var(--table-header-bg);
+        color: var(--menu-text-color);
+        font-weight: bold;
+        border: 1px solid var(--table-border-color);
+    }
+
+    .table td {
+        border: 1px solid var(--table-border-color);
+        padding: 10px;
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: var(--table-row-alt);
+}
+
+.table-hover tbody tr:hover {
+    background-color: var(--hover-color);
+}
+
+/* =================== */
+/*     MEDIA QUERIES   */
+/* =================== */
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .header h1 {
+            font-size: 20px;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+    .menu {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+        .menu ul li a {
+            font-size: 16px;
+            padding: 8px;
+        }
+
+    .content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .tab-content {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .menu ul li a {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .nombre {
+        font-size: 16px;
+    }
+}

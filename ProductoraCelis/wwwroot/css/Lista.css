@@ -1,0 +1,179 @@
+﻿/* Estilos para la sección de Gestión de Clientes */
+#clientes {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+    #clientes h2 {
+        color: #004080;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+/* Formulario de Cliente */
+#add-client-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+    #add-client-form label {
+        display: block;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    #add-client-form input[type="text"],
+    #add-client-form input[type="email"],
+    #add-client-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    #add-client-form button {
+        background-color: #004080;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+        #add-client-form button:hover {
+            background-color: #0059b3;
+        }
+
+/* Encabezado y enlace de lista de clientes */
+#clientes h3 {
+    font-size: 20px;
+    color: #004080;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#clientes div strong {
+    color: #333;
+    font-size: 16px;
+}
+
+#clientes div a {
+    font-size: 16px;
+    color: #004080;
+    text-decoration: none;
+    background-color: #e6f2ff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+    #clientes div a:hover {
+        background-color: #cce0ff;
+        color: #003366;
+    }
+
+/* Tabla de Clientes */
+/*.tabla_clientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff;
+}
+
+    .tabla_clientes thead th {
+        background-color: #004080;
+        color: #ffffff;
+        padding: 10px;
+        text-align: left;
+        font-size: 14px;
+    }
+
+    .tabla_clientes tbody td {
+        padding: 8px;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+        color: #333;
+    }
+
+    .tabla_clientes tbody tr:hover {
+        background-color: #f1f1f1;
+    }*/
+
+    /* Botones de acción (Editar y Eliminar) */
+    /*.tabla_clientes .btn-editar,
+    .tabla_clientes .btn_eliminar {
+        padding: 5px 10px;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    .tabla_clientes .btn-editar {
+        background-color: #4CAF50;
+        margin-right: 5px;
+    }
+
+        .tabla_clientes .btn-editar:hover {
+            background-color: #45a049;
+        }
+
+    .tabla_clientes .btn_eliminar {
+        background-color: #f44336;
+    }
+
+        .tabla_clientes .btn_eliminar:hover {
+            background-color: #e41e2b;
+        }*/
+
+
+/* Responsive Design */
+/*@media (max-width: 768px) {
+    table.responsive-table thead {
+        display: none;
+    }
+
+    table.responsive-table,
+    table.responsive-table tbody,
+    table.responsive-table tr,
+    table.responsive-table td {
+        display: block;
+        width: 100%;
+    }
+
+        table.responsive-table tr {
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ddd;
+            padding: 10px 0;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-radius: 10px;
+        }
+
+        table.responsive-table td {
+            position: relative;
+            padding-left: 50%;
+            text-align: left;
+            border: none;
+            border-bottom: 1px solid #eee;
+            font-size: 0.95rem;
+        }
+
+            table.responsive-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 15px;
+                top: 10px;
+                font-weight: bold;
+                text-transform: capitalize;
+                color: #333;
+            }
+}*/

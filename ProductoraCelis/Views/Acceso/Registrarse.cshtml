@@ -1,0 +1,52 @@
+﻿@model ProductoraCelis.ViewsModes.UsuarioVM;
+@{
+    Layout = null;
+}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>REGISTRARSE</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row mt-5 justify-content-center">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-header">
+                    Registrate
+                </div>
+                <div class="card-body">
+                    <form asp-controller="Acceso" asp-action="Registrarse" method="post">
+
+                        <input class="form-control mb-3" type="text"
+                               placeholder="Nombre Completo" required asp-for="Nombres" />
+                        <input class="form-control mb-3" type="text"
+                               placeholder="Apellidos" required asp-for="Apellidos" />
+                        <input class="form-control mb-3" type="text"
+                               placeholder="Numero de Celular" required asp-for="Celular" />
+                        <input class="form-control mb-3" type="text"
+                               placeholder="Numero de Dni" required asp-for="Dni" />
+                        <input class="form-control mb-3" type="text"
+                               placeholder="Email" required asp-for="Email" />
+                        <input class="form-control mb-3" type="password"
+                               placeholder="Contraseña" required asp-for="Password" />
+                        <input class="form-control mb-3" type="password"
+                               placeholder="Repita Contraseña" required asp-for="PasswordConfirm" />
+                        <div class="d-grid gap-2 mb-3">
+                            <button class="btn btn-warning">Registrate</button>
+                        </div>
+                        @if (ViewData["Mensaje"] != null)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                @ViewData["Mensaje"]
+                            </div>
+                        }
+                        ¿Ya tienes una cuenta? <a asp-controller="Acceso" asp-action="Login">Iniciar Sesion</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+

@@ -1,0 +1,142 @@
+/* Variables de diseño */
+:root {
+    /* Colores principales */
+    --primary-pink: #ff6b81;
+    --secondary-pink: #ff8fab;
+    --pink-light: #ffc2d1;
+    --dark-pink: #d63447;
+    /* Colores complementarios */
+    --soft-blue: #e6f0ff;
+    --dark-blue: #2c3e50;
+    /* Neutrales */
+    --white: #ff6b81;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #495057;
+}
+
+/* Estructura general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Barra de navegación personalizada */
+.navbar.bg-pink {
+    background-color: var(--primary-pink) !important;
+    background-image: linear-gradient(135deg, var(--primary-pink), var(--dark-pink));
+}
+
+.navbar-brand img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+.nav-link {
+    position: relative;
+    padding: 0.5rem 1rem !important;
+    font-weight: 500;
+}
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background: var(--primary-pink);
+        transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+        width: 70%;
+    }
+
+/* Contenido principal */
+.main-content {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+/* Tarjetas */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    }
+
+.card-header {
+    background-color: var(--primary-pink);
+    color: var( --secondary-pink);
+    border-radius: 0.5rem 0.5rem 0 0 !important;
+}
+
+ Tablas responsive 
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    background-color: var(--primary-pink);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+    .table thead th {
+        background-color: var(--dark-blue);
+        color: var(--primary-pink);
+        border-bottom: none;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+    }
+
+/* Footer */
+.footer {
+    background-color: var(--medium-gray);
+    color: var(--dark-gray);
+}
+
+/* Breakpoints específicos */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        padding-top: 1rem;
+        background-color: var(--primary-pink);
+        border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .nav-link {
+        padding: 0.75rem 1.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding-top: 1rem;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+td, th {
+    font-size: 1.2rem;
+    padding: 20px;
+    text-align: center;
+}

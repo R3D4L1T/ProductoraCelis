@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="ProductoraCelis20250626163039" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\USUARIO\\Desktop\\calidadsoftware\\projectFINAL\\ProyectoFinal2\.0\\ProyectoFinal2\.0\\ProductoraCelis\\obj\\Release\\net8\.0\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>

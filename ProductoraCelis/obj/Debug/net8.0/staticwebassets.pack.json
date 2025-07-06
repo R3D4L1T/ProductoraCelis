@@ -1,0 +1,609 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\ProductoraCelis.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ProductoraCelis.1j6h9j2od6.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\comprobantes\\Comprobante_1_20250528143709.pdf",
+      "PackagePath": "staticwebassets\\comprobantes\\Comprobante_1_20250528143709.pdf"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\comprobantes\\Comprobante_1_20250528143908.pdf",
+      "PackagePath": "staticwebassets\\comprobantes\\Comprobante_1_20250528143908.pdf"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\comprobantes\\Comprobante_1_20250528144848.pdf",
+      "PackagePath": "staticwebassets\\comprobantes\\Comprobante_1_20250528144848.pdf"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Carrucel.css",
+      "PackagePath": "staticwebassets\\css\\Carrucel.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Comprobante.css",
+      "PackagePath": "staticwebassets\\css\\Comprobante.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\Dashboard.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Footer.css",
+      "PackagePath": "staticwebassets\\css\\Footer.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Header.css",
+      "PackagePath": "staticwebassets\\css\\Header.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Lista.css",
+      "PackagePath": "staticwebassets\\css\\Lista.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Productos.css",
+      "PackagePath": "staticwebassets\\css\\Productos.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\RealizarPago.css",
+      "PackagePath": "staticwebassets\\css\\RealizarPago.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Registrar.css",
+      "PackagePath": "staticwebassets\\css\\Registrar.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\Reporte.css",
+      "PackagePath": "staticwebassets\\css\\Reporte.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\ResumenCarrito.css",
+      "PackagePath": "staticwebassets\\css\\ResumenCarrito.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\franja.css",
+      "PackagePath": "staticwebassets\\css\\franja.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\css\\theme.css",
+      "PackagePath": "staticwebassets\\css\\theme.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche descremada_65d5020c-73b4-4058-bc79-fd3493b8d678.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche descremada_65d5020c-73b4-4058-bc79-fd3493b8d678.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche deslactosa_41c41885-4cd2-4009-b2bd-aa4f6318185e.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche deslactosa_41c41885-4cd2-4009-b2bd-aa4f6318185e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche deslactosa_478ac3c4-fe5b-41c8-88ff-ade7fe0d0af6.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche deslactosa_478ac3c4-fe5b-41c8-88ff-ade7fe0d0af6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche deslactosa_ccf50741-8bb2-466c-948a-b10cb9592722.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche deslactosa_ccf50741-8bb2-466c-948a-b10cb9592722.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche evaporada_a11a0810-bedc-4bca-abd4-1ae71babf44e.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche evaporada_a11a0810-bedc-4bca-abd4-1ae71babf44e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche light_0ff5e60b-b8ac-4b59-8161-bbfe39f8147d.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche light_0ff5e60b-b8ac-4b59-8161-bbfe39f8147d.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche light_2e0665e0-7730-44fc-9cc0-7aca8356d9b7.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche light_2e0665e0-7730-44fc-9cc0-7aca8356d9b7.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche_73f79dcc-6e95-4824-a140-a9778e0e24b1.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche_73f79dcc-6e95-4824-a140-a9778e0e24b1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche_c1349043-a2b4-485b-986d-6c7de72e517b.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche_c1349043-a2b4-485b-986d-6c7de72e517b.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\leche_c85e8772-ce20-43e5-9501-50d27a5b3309.jpeg",
+      "PackagePath": "staticwebassets\\images\\leche_c85e8772-ce20-43e5-9501-50d27a5b3309.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla  sin sal_f38500a2-8153-46f9-863c-586a2ce330be.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla  sin sal_f38500a2-8153-46f9-863c-586a2ce330be.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla con sal_07277602-8421-4b01-aed2-34963683dae6.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla con sal_07277602-8421-4b01-aed2-34963683dae6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla con sal_acf655b9-de6e-4cf3-9ba7-f3223c9b0096.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla con sal_acf655b9-de6e-4cf3-9ba7-f3223c9b0096.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla sin sal_37286d55-260e-4ef5-bf79-5fc7662bcc9a.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla sin sal_37286d55-260e-4ef5-bf79-5fc7662bcc9a.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla sin sal_7f895a84-b0e8-48a6-9bd7-c06fc847a1b3.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla sin sal_7f895a84-b0e8-48a6-9bd7-c06fc847a1b3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla sin sal_cbab1b99-b62e-4b71-89a4-8714ae2a1a0c.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla sin sal_cbab1b99-b62e-4b71-89a4-8714ae2a1a0c.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla sin sal_ceed0bb5-c47d-4edd-a460-f36382dec31d.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla sin sal_ceed0bb5-c47d-4edd-a460-f36382dec31d.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla_651af5fb-e675-47ef-bd6e-fb38271e8a39.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla_651af5fb-e675-47ef-bd6e-fb38271e8a39.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\mantequilla_f9452481-4a2c-4d2d-8b2f-c079560ff4fe.jpeg",
+      "PackagePath": "staticwebassets\\images\\mantequilla_f9452481-4a2c-4d2d-8b2f-c079560ff4fe.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\queso parmesano_d20fab76-bbf7-454c-8823-3a19e7115919.jpeg",
+      "PackagePath": "staticwebassets\\images\\queso parmesano_d20fab76-bbf7-454c-8823-3a19e7115919.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\queso parmesano_d20fab76-bbf7-454c-8823-3a19e7115919_22fe2cf4-fc09-4400-b8ea-94225a0de054.jpeg",
+      "PackagePath": "staticwebassets\\images\\queso parmesano_d20fab76-bbf7-454c-8823-3a19e7115919_22fe2cf4-fc09-4400-b8ea-94225a0de054.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\queso parmesano_fe4d504d-6dfd-4963-a017-d09d62a74ee6.jpeg",
+      "PackagePath": "staticwebassets\\images\\queso parmesano_fe4d504d-6dfd-4963-a017-d09d62a74ee6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\queso suiso_06c49ad9-f9aa-4772-9528-7cde8c008038.jpeg",
+      "PackagePath": "staticwebassets\\images\\queso suiso_06c49ad9-f9aa-4772-9528-7cde8c008038.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\queso suiso_372200d8-e1c4-486b-b72e-26e01018fb0e.jpeg",
+      "PackagePath": "staticwebassets\\images\\queso suiso_372200d8-e1c4-486b-b72e-26e01018fb0e.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\queso suiso_cae7f405-4e58-47ef-a71b-9dd29d835731.jpeg",
+      "PackagePath": "staticwebassets\\images\\queso suiso_cae7f405-4e58-47ef-a71b-9dd29d835731.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\queso_81a27332-1dc2-48c1-851b-583dde1abe17.jpeg",
+      "PackagePath": "staticwebassets\\images\\queso_81a27332-1dc2-48c1-851b-583dde1abe17.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\yogurt fresa_19b3d15c-efa7-4ec4-9ffb-1f8b6e6922c8.jpeg",
+      "PackagePath": "staticwebassets\\images\\yogurt fresa_19b3d15c-efa7-4ec4-9ffb-1f8b6e6922c8.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\yogurt mango_3e878ef2-09de-4c85-9513-bebd649b2251.jpeg",
+      "PackagePath": "staticwebassets\\images\\yogurt mango_3e878ef2-09de-4c85-9513-bebd649b2251.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\yogurt mango_d262b9cc-37c3-4295-859f-bce41db18ecd.jpeg",
+      "PackagePath": "staticwebassets\\images\\yogurt mango_d262b9cc-37c3-4295-859f-bce41db18ecd.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\yogurt5_7173521a-0f4f-4543-94f6-019b47d03a18.jpeg",
+      "PackagePath": "staticwebassets\\images\\yogurt5_7173521a-0f4f-4543-94f6-019b47d03a18.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\images\\yogurt_61034c3e-d03b-4164-bf30-fc2ab59322b6.jpeg",
+      "PackagePath": "staticwebassets\\images\\yogurt_61034c3e-d03b-4164-bf30-fc2ab59322b6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\js\\Carrito.js",
+      "PackagePath": "staticwebassets\\js\\Carrito.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\js\\Carrucel.js",
+      "PackagePath": "staticwebassets\\js\\Carrucel.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\js\\Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\Dashboard.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\js\\Header.js",
+      "PackagePath": "staticwebassets\\js\\Header.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\js\\Pago.js",
+      "PackagePath": "staticwebassets\\js\\Pago.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\js\\Productos.js",
+      "PackagePath": "staticwebassets\\js\\Productos.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\slick\\slick-theme.css",
+      "PackagePath": "staticwebassets\\slick\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\slick\\slick.min.js",
+      "PackagePath": "staticwebassets\\slick\\slick.min.js"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\slick\\slick.scss",
+      "PackagePath": "staticwebassets\\slick\\slick.scss"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\afiches\\afiche1.jpeg",
+      "PackagePath": "staticwebassets\\src\\afiches\\afiche1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\afiches\\afiche2.jpeg",
+      "PackagePath": "staticwebassets\\src\\afiches\\afiche2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\afiches\\afiche3.jpeg",
+      "PackagePath": "staticwebassets\\src\\afiches\\afiche3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\afiches\\afiche4.jpeg",
+      "PackagePath": "staticwebassets\\src\\afiches\\afiche4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\afiches\\afiche5.jpeg",
+      "PackagePath": "staticwebassets\\src\\afiches\\afiche5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\icon\\franja.jpg",
+      "PackagePath": "staticwebassets\\src\\icon\\franja.jpg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\icon\\logo.png",
+      "PackagePath": "staticwebassets\\src\\icon\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\WhatsApp Image 2024-11-18 at 5.23.55 PM.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\WhatsApp Image 2024-11-18 at 5.23.55 PM.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\leche descremada.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\leche descremada.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\leche deslactosa.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\leche deslactosa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\leche evaporada.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\leche evaporada.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\leche light.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\leche light.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\leche.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\leche.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\mantequilla  sin sal.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\mantequilla  sin sal.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\mantequilla con sal.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\mantequilla con sal.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\mantequilla sin sal.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\mantequilla sin sal.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\mantequilla.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\mantequilla.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\queso con pecanas.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\queso con pecanas.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\queso mantecoso.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\queso mantecoso.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\queso mosarella.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\queso mosarella.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\queso parmesano.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\queso parmesano.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\queso suiso.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\queso suiso.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\queso.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\queso.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\yogurt arandano.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\yogurt arandano.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\yogurt fresa.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\yogurt fresa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\yogurt mango.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\yogurt mango.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\yogurt.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\yogurt.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\santi\\Desktop\\ProyectoFinal2.0\\ProductoraCelis\\wwwroot\\src\\produc\\yogurt5.jpeg",
+      "PackagePath": "staticwebassets\\src\\produc\\yogurt5.jpeg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductoraCelis.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.ProductoraCelis.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.ProductoraCelis.props",
+      "PackagePath": "build\\ProductoraCelis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductoraCelis.props",
+      "PackagePath": "buildMultiTargeting\\ProductoraCelis.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.ProductoraCelis.props",
+      "PackagePath": "buildTransitive\\ProductoraCelis.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

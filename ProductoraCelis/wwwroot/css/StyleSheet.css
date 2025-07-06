@@ -1,0 +1,30 @@
+﻿/* === Contenedor centrado === */
+.producto-imagen {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* === Imagen responsiva === */
+.imagen-grande {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px; /* opcional para suavizar bordes */
+}
+
+/* === Nombre del producto === */
+.producto-nombre {
+    margin-top: 0.75rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+/* === Descripción del producto === */
+.producto-descripcion {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #6c757d;
+}

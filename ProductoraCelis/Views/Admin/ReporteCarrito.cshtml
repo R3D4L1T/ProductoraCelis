@@ -1,0 +1,118 @@
+﻿@model ProductoraCelis.ViewsModes.ReporteCarritoVM
+@{
+    Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/Reporte.css" />
+<link rel="stylesheet" href="~/css/theme.css" />
+
+
+<div id="comprobante">
+<a asp-controller="Admin" asp-action="Dashboard" class="">Volver </a>
+<form method="get" asp-action="ReporteCarrito" class="form-reporte">
+
+    <div>
+        <label>Fecha Inicio:</label>
+        <input type="date" name="fechaInicio" value="@(Model.FechaInicio?.ToString("yyyy-MM-dd"))" />
+    </div>
+    <div>
+        <label>Fecha Fin:</label>
+        <input type="date" name="fechaFin" value="@(Model.FechaFin?.ToString("yyyy-MM-dd"))" />
+    </div>
+    <button type="submit">Filtrar</button>
+</form>
+
+<table class="table-reporte">
+    <thead>
+        <tr>
+            <th>Id Producto</th>
+            <th>Categoría</th>
+            <th>Cantidad</th>
+            <th>Precio Unitario</th>
+            <th>Subtotal</th>
+            <th>Total Cantidad Vendida</th>
+            <th>Fecha y Hora</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Reportes)
+        {
+            <tr>
+                <td>@item.IdProducto</td>
+                <td>@item.Categoria</td>
+                <td>@item.Cantidad</td>
+                    <td>@item.PrecioUnitario.ToString("C", new System.Globalization.CultureInfo("es-PE"))</td>
+                    <td>@item.Subtotal.ToString("C", new System.Globalization.CultureInfo("es-PE"))</td>
+                <td>@item.TotalCantidadVendida</td>
+                <td>@item.FechaHora.ToString("g")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+    <div class="btn-container">
+        <button class="btn-download" onclick="generarPDF()">📄 Descargar Reporte</button>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script>
+    async function generarPDF() {
+        // Aquí seleccionamos todo el div que contiene el reporte
+        const element = document.getElementById('comprobante');
+
+        const opt = {
+            margin: 0.5,
+            filename: 'ReporteCarrito.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2 },
+            jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+        };
+
+        // Convertimos todo el contenido del div en PDF
+        const worker = html2pdf().set(opt).from(element);
+
+        // Obtener el PDF en Base64
+        const pdfBase64 = await worker.outputPdf('datauristring');
+
+        // Descargar el archivo
+        const link = document.createElement('a');
+        link.href = pdfBase64;
+        link.download = opt.filename;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+
+        // Extraer solo el contenido base64 sin encabezado
+        const base64Data = pdfBase64.split(',')[1];
+
+        // Enviar al backend para guardarlo
+        try {
+            const response = await fetch('/Reporte/GuardarPDF', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ pdfBase64: base64Data })
+            });
+
+            const resultado = await response.json();
+            alert(resultado.mensaje);
+        } catch (error) {
+            console.error('Error en la petición:', error);
+            alert('El reporte fue descargado con exito');
+        }
+    }
+</script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS (opcional si ya lo tienes con los archivos locales) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Widget de accesibilidad UserWay -->
+    <script src="https://cdn.userway.org/widget.js" data-account="2CI6j9fC2f"></script>
+</div>
+

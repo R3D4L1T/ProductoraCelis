@@ -1,0 +1,194 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* carousel hecho por el chatooo */
+.carousel {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+    .carousel .list .item {
+        width: 120px;
+        height: 100px;
+        position: absolute;
+        top: 80%;
+        transform: translateY(-70%);
+        left: 70%;
+        border-radius: 20px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        background-position: 50% 50%;
+        background-size: cover;
+        z-index: 100;
+        transition: 1s;
+    }
+
+        /* Destacar los primeros elementos */
+        .carousel .list .item:nth-child(1),
+        .carousel .list .item:nth-child(2) {
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .carousel .list .item:nth-child(3) {
+            left: 60%;
+        }
+
+        .carousel .list .item:nth-child(4) {
+            left: calc(60% + 220px);
+        }
+
+        .carousel .list .item:nth-child(5) {
+            left: calc(60% + 440px);
+        }
+
+        .carousel .list .item:nth-child(6) {
+            left: calc(60% + 660px);
+        }
+
+        .carousel .list .item:nth-child(n+7) {
+            left: calc(60% + 880px);
+            opacity: 0;
+        }
+
+/* contenido */
+.list .item .content {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    width: 400px;
+    text-align: left;
+    color: #fff;
+    display: none;
+}
+
+.list .item:nth-child(2) .content {
+    display: block;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+/* flechas */
+.arrows {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+    .arrows button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #14ff72cb;
+        color: #fff;
+        border: none;
+        font-size: 16px;
+        font-weight: bold;
+        transition: .5s;
+        cursor: pointer;
+    }
+
+        .arrows button:hover {
+            background: #fff;
+            color: #000;
+        }
+
+/* barra de progreso */
+.carousel .timeRunning {
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 4px;
+    background-color: #14ff72cb;
+    left: 0;
+    top: 0;
+    animation: runningTime 7s linear 1 forwards;
+}
+
+@keyframes runningTime {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 999px) {
+    .list .item .content {
+        width: 70%;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list .item .content {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    .arrows {
+        bottom: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+        .arrows button {
+            width: 40px;
+            height: 40px;
+            font-size: 14px;
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel .list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list .item {
+        width: 90%;
+        height: 80px;
+    }
+
+        .list .item .content {
+            font-size: 12px;
+            width: 90%;
+            left: 5%;
+        }
+
+    .arrows button {
+        width: 35px;
+        height: 35px;
+    }
+}

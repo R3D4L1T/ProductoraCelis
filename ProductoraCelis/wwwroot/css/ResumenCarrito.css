@@ -1,0 +1,181 @@
+﻿/* === Estilos Globales === */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0 20px 40px;
+    color: #333;
+}
+
+/* === Títulos === */
+h2 {
+    text-align: center;
+    margin: 30px 0 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    animation: fadeInDown 0.8s ease forwards;
+}
+
+/* === Mensaje vacío === */
+.empty-message {
+    text-align: center;
+    font-style: italic;
+    color: #7f8c8d;
+}
+
+
+
+/* === Botones === */
+.btn {
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 14px;
+    transition: background-color 0.3s ease, transform 0.15s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    user-select: none;
+    width: 100%; /* Botones ocupan el 100% del ancho en móviles */
+}
+
+.btn-sm {
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    width: auto; /* Botones pequeños tienen ancho automático */
+}
+
+.btn-warning {
+    background-color: #f39c12;
+    color: white;
+}
+
+    .btn-warning:hover {
+        background-color: #d68910;
+        transform: scale(1.1);
+    }
+
+.btn-success {
+    background-color: #27ae60;
+    color: white;
+}
+
+    .btn-success:hover {
+        background-color: #219150;
+        transform: scale(1.1);
+    }
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+}
+
+    .btn-danger:hover {
+        background-color: #c0392b;
+        transform: scale(1.05);
+    }
+
+.btn-primary {
+    background-color: #2980b9;
+    color: white;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(41, 128, 185, 0.4);
+}
+
+    .btn-primary:hover {
+        background-color: #21618c;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 15px rgba(33, 97, 140, 0.7);
+    }
+
+/* === Alineación === */
+.text-right {
+    text-align: right;
+}
+
+/* === Animaciones === */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Tablas responsive */
+@media (max-width: 768px) {
+    .table-responsive table {
+        border: none;
+    }
+
+    .table-responsive thead {
+        display: none !important;
+    }
+
+    .table-responsive tbody, .table-responsive tr, .table-responsive td {
+        display: block;
+        width: 100%;
+    }
+
+    .table-responsive tr {
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 0.5rem;
+        background-color: #fefefe;
+    }
+
+    .table-responsive td {
+        position: relative;
+        padding-left: 50%;
+        text-align: left;
+        font-size: 0.9rem;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #eee;
+    }
+
+        .table-responsive td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 0.75rem;
+            top: 0.5rem;
+            font-weight: bold;
+            font-size: 0.9rem;
+            color: #333;
+        }
+
+    .table-responsive tfoot td {
+        text-align: right;
+        font-weight: bold;
+        border: none;
+    }
+}
+
+/* === Estilos generales para todos los elementos === */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}

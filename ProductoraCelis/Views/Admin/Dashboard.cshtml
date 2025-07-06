@@ -1,0 +1,319 @@
+﻿@model ProductoraCelis.ViewsModes.AdminVM;
+@{
+    Layout =null;
+}
+<html lang="es">
+<head>
+
+    <link rel="stylesheet" href="~/css/Dashboard.css" />
+    <link rel="stylesheet" href="~/css/Lista.css" />
+    <link rel="stylesheet" href="~/css/theme.css" />
+    <link rel="stylesheet" href="~/css/responsive-tables.css" />
+    @* <link rel="stylesheet" href="~/css/site.css" /> *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+     
+</head>
+<body>
+    <header class="header">
+        <img src="/src/icon/franja.jpg" alt="Franja decorativa" class="franja" /> <div class="logo">
+            <a class="logo">
+                <img src="/src/icon/logo.png" /> <h1></h1> <h1>
+                    Panel de Control - Administrador:
+                    @if (User.Identity!.IsAuthenticated)
+                {
+                    <span>@User.Claims.FirstOrDefault(c => c.Type == System.Security.Claims.ClaimTypes.Name)?.Value</span>
+                }
+                </h1>
+            </a>
+        </div>
+    </header>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Productora Celis</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"> <a class="nav-link tab-link active" data-tab="inicio" href="#"> <i class="fas fa-home"></i> Inicio </a> </li>
+                    <li class="nav-item"><a class="nav-link tab-link" data-tab="reporte-ventas" href="#"> <i class="fas fa-chart-line"></i> Ver Reporte </a></li>
+                    <li class="nav-item"><a class="nav-link tab-link" data-tab="clientes" href="#"> <i class="fas fa-users"></i> Clientes </a></li>
+                    <li class="nav-item"> <a class="nav-link tab-link" data-tab="productos" href="#"> <i class="fas fa-box"></i> Productos </a></li>
+                    <li class="nav-item"> <a class="nav-link tab-link" data-tab="proveedores" href="#"> <i class="fas fa-truck"></i> Proveedores </a></li>
+                    <li class="nav-item"><a class="nav-link tab-link" data-tab="salir" href="#"> <i class="fas fa-sign-out-alt"></i> Salir </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <!-- PESTAÑA: INICIO -->
+        <div id="tab-inicio" class="tab-pane">
+            <h2>Bienvenido al Sistema de Ventas</h2>
+            <p>Seleccione una opción del menú para comenzar.</p>
+        </div>
+
+        <!-- PESTAÑA: REPORTE DE VENTAS -->
+        <div id="tab-reporte-ventas" class="tab-pane d-none">
+            <div class="mb-3">
+                <a class="btn btn-primary" asp-controller="Admin" asp-action="ReporteCarrito">
+                    Ver Reporte de Ventas
+                </a>
+            </div>
+            <div class="mb-4">
+                <hr />
+                <h4>Total de Clientes: @Model.TotalClientes</h4>
+                <hr />
+                <h4>Total de Productos: @Model.TotalProductos</h4>
+                <hr />
+                <h4>Total de Proveedores: @Model.TotalProveedores</h4>
+                <hr />
+            </div>
+        </div>
+
+        <!-- PESTAÑA: CLIENTES -->
+        <div id="tab-clientes" class="tab-pane d-none">
+            <h2>Gestion de Clientes Mayoristas</h2>
+            <div>
+                <strong>Total de Clientes: @Model.TotalClientes</strong>
+                <a asp-controller="Admin" asp-action="Registrar_Cliente">Agregar nuevo Cliente</a>
+            </div>
+            <div class="table-responsive table-mobile-responsive">
+                <table class="table table-bordered table-striped table-hover table-mobile-responsive">
+                    <thead style="background-color: white">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>Dni</th>
+                            <th>Celular</th>
+                            <th>Dirección</th>
+                            <th>Fecha Registro</th>
+                            <th>Descripción</th>
+                            <th>Activo</th>
+                            <th>Email</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Clientes)
+                        {
+                            <tr>
+                                <td data-label="ID">@item.IdClientes</td>
+                                <td data-label="Nombres">@item.Nombres</td>
+                                <td data-label="Apellidos">@item.Apellidos</td>
+                                <td data-label="Dni">@item.Dni</td>
+                                <td data-label="Celular">@item.Celular</td>
+                                <td data-label="Dirección">@item.Direccion</td>
+                                <td data-label="Fecha Registro">@item.FechaRegistro.ToString("dd/MM/yyyy")</td>
+                                <td data-label="Descripción">@item.Descripcion</td>
+                                <td data-label="Activo">@(item.Estado ? "Sí" : "No")</td>
+                                <td data-label="Email">@item.Email</td>
+                                <td data-label="Acciones">
+                                    <a asp-controller="Admin" asp-action="Editar_Cliente" asp-route-id="@item.IdClientes" class="btn btn-success btn-sm mb-1">Editar</a>
+                                    <a asp-controller="Admin" asp-action="Eliminar_Clientes" asp-route-id="@item.IdClientes" class="btn btn-danger btn-sm" onclick="return confirm('¿Seguro que desea eliminar este cliente?');">Eliminar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PESTAÑA: PRODUCTOS -->
+        <div id="tab-productos" class="tab-pane d-none">
+            <h2>Gestion de Productos</h2>
+            <div>
+                <strong>Total de Productos: @Model.TotalProductos</strong>
+                <a asp-controller="Admin" asp-action="Registrar_Producto">Agregar nuevo Producto</a>
+            </div>
+            <div class="table-responsive table-mobile-responsive">
+                <table class="table table-bordered table-striped table-hover table-mobile-responsive">
+                    <thead style="background-color: white" class="">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Descripción</th>
+                            <th>Stock</th>
+                            <th>Fecha de producción</th>
+                            <th>Fecha de vencimiento</th>
+                            <th>Precio</th>
+                            <th>Estado</th>
+                            <th>Imagen</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Productos)
+                        {
+                            <tr>
+                                <td data-label="ID">@item.IdProducto</td>
+                                <td data-label="Nombre">@item.Nombre</td>
+                                <td data-label="Categoría">@item.Categoria</td>
+                                <td data-label="Descripción">@item.Descripcion</td>
+                                <td data-label="Stock">@item.Stock</td>
+                                <td data-label="Fecha de producción">@item.FechaProduccion.ToString("dd/MM/yyyy")</td>
+                                <td data-label="Fecha de vencimiento">@item.FechaVencimiento.ToString("dd/MM/yyyy")</td>
+                                <td data-label="Precio">@item.Precio</td>
+                                <td data-label="Estado">@(item.Estado ? "Sí" : "No")</td>
+                                <td data-label="Imagen">
+                                    @if (!string.IsNullOrEmpty(item.UrlImagen))
+                                    {
+                                        <img src="@item.UrlImagen" alt="Imagen del producto" style="width: 100px; height: auto;" />
+                                    }
+                                    else
+                                    {
+                                        <span>Sin imagen</span>
+                                    }
+                                </td>
+                                <td data-label="Acciones">
+                                    <a asp-controller="Admin" asp-action="Editar_Producto" asp-route-id="@item.IdProducto" class="btn btn-success btn-sm mb-1">Editar</a>
+                                    <a asp-controller="Admin" asp-action="Eliminar_Producto" asp-route-id="@item.IdProducto" class="btn btn-danger btn-sm" onclick="return confirm('¿Seguro que desea eliminar este producto?');">Eliminar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PESTAÑA: PROVEEDORES -->
+        <div id="tab-proveedores" class="tab-pane d-none">
+            <h2>Gestión de Proveedores</h2>
+            <div>
+                <strong>Total de Proveedores: @Model.TotalProveedores</strong>
+                <a asp-controller="Admin" asp-action="Registrar_Proveedor">Agregar nuevo Proveedor</a>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover table-mobile-responsive">
+                    <thead style="background-color: white" class="">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombres</th>
+                            <th>Apellidos</th>
+                            <th>DNI</th>
+                            <th>Celular</th>
+                            <th>Dirección</th>
+                            <th>Fecha de Registro</th>
+                            <th>Descripción</th>
+                            <th>Tipo</th>
+                            <th>Activo</th>
+                            <th>Email</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Proveedores)
+                        {
+                            <tr>
+                                <td data-label="ID">@item.IdProveedor</td>
+                                <td data-label="Nombres">@item.Nombres</td>
+                                <td data-label="Apellidos">@item.Apellidos</td>
+                                <td data-label="DNI">@item.Dni</td>
+                                <td data-label="Celular">@item.Celular</td>
+                                <td data-label="Dirección">@item.Direccion</td>
+                                <td data-label="Fecha de Registro">@item.FechaRegistro.ToString("dd/MM/yyyy")</td>
+                                <td data-label="Descripción">@item.Descripcion</td>
+                                <td data-label="Tipo">@item.Tipo</td>
+                                <td data-label="Activo">@(item.Estado ? "Sí" : "No")</td>
+                                <td data-label="Email">@item.Email</td>
+                                <td data-label="Acciones">
+                                    <a asp-controller="Admin" asp-action="Editar_Proveedor" asp-route-id="@item.IdProveedor" class="btn btn-success btn-sm mb-1">Editar</a>
+                                    <a asp-controller="Admin" asp-action="Eliminar_Proveedor" asp-route-id="@item.IdProveedor" class="btn btn-danger btn-sm" onclick="return confirm('¿Seguro que desea eliminar este proveedor?');">Eliminar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- PESTAÑA: SALIR -->
+        <div id="tab-salir" class="tab-pane d-none text-center py-5">
+            <h2 class="fw-bold display-6">Cerrar Sesión</h2>
+            <p class="fs-5 mt-3">¿Está seguro que desea salir del sistema?</p>
+            <a asp-controller="Home" asp-action="Salir" class="btn btn-danger btn-lg mt-4" onclick="alert('Sesión cerrada')">
+                Confirmar salida
+            </a>
+        </div>
+
+
+    </div>
+
+    <!-- SCRIPTS NECESARIOS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Lógica de pestañas -->
+    <script>
+        document.querySelectorAll('.tab-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelectorAll('.tab-pane').forEach(tab => {
+                    tab.classList.add('d-none');
+                });
+                document.querySelectorAll('.tab-link').forEach(tab => {
+                    tab.classList.remove('active');
+                });
+                const tabId = this.getAttribute('data-tab');
+                document.getElementById(`tab-${tabId}`).classList.remove('d-none');
+                this.classList.add('active');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const tab = urlParams.get('tab');
+
+            if (tab) {
+                // Desactiva todos
+                document.querySelectorAll('.tab-pane').forEach(el => {
+                    el.classList.add('d-none');
+                    el.classList.remove('active');
+                });
+
+                document.querySelectorAll('.tab-link').forEach(el => {
+                    el.classList.remove('active');
+                });
+
+                // Activa el tab deseado
+                const targetTab = document.getElementById(`tab-${tab}`);
+                if (targetTab) {
+                    targetTab.classList.remove('d-none');
+                    targetTab.classList.add('active');
+
+                    // También activa el tab-link si existe
+                    const activeLink = document.querySelector(`.tab-link[data-tab="${tab}"]`);
+                    if (activeLink) {
+                        activeLink.classList.add('active');
+                    }
+                }
+            }
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS (opcional si ya lo tienes con los archivos locales) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Widget de accesibilidad UserWay -->
+    <script src="https://cdn.userway.org/widget.js" data-account="2CI6j9fC2f"></script>
+</body>
+
+
+</html>

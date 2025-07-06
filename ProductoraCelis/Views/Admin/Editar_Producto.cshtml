@@ -1,0 +1,79 @@
+﻿@model ProductoraCelis.Models.Producto;
+@{
+    Layout = null;
+}
+<html>
+    <head>
+    <link rel="stylesheet" href="~/css/Registrar.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+     </head>
+    <body>
+    <div>
+        <h2>Modificar Producto</h2>
+        <form asp-controller="Admin" asp-action="Editar_Producto" method="post" enctype="multipart/form-data">
+            <input asp-for="IdProducto" type="hidden" />
+            <div>
+                <label>Nombre de producto</label>
+                <input asp-for="Nombre" type="text" class="form-control" required />
+            </div>
+            <div>
+                <label>Categoria</label>
+                <input asp-for="Categoria" type="text" class="form-control" required />
+            </div>
+            <div>
+                <label>Descripcion</label>
+                <input asp-for="Descripcion" type="text" class="form-control" required />
+            </div>
+            <div class="item">
+                <label>Stock</label>
+                <input asp-for="Stock" type="number" class="form-control" required />
+            </div>
+            <div>
+                <label>Fecha de produccion</label>
+                <input asp-for="FechaProduccion" type="datetime-local" class="form-control" required />
+            </div>
+            <div>
+                <label>Fecha de Vencimiento</label>
+                <input asp-for="FechaVencimiento" type="datetime-local" class="form-control" required />
+
+            </div>
+            <div>
+                <label>Precio</label>
+                <input asp-for="Precio" type="number" class="form-control" required />
+
+            </div>
+            <!--div>
+                <label>Imagen</label>
+                <input asp-for="UrlImagen" type="file" id="Imagen" name="Imagen" required />
+            </!--div-->
+            <div>
+                <label>Imagen</label>
+                <input type="file" id="Imagen" name="Imagen" class="form-control" />
+
+            </div>
+            <div>
+                <input asp-for="Estado" type="checkbox" class="form-check" id="chkActivo" />
+                <label>Activo</label>
+            </div>
+            <div >
+                <button type="submit" class="btn-guardar btn">Guardar</button>
+                <a asp-controller="Admin" asp-action="Dashboard" asp-route-tab="productos" class="btn-volver">Volver</a>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Bootstrap JS (opcional si ya lo tienes con los archivos locales) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Widget de accesibilidad UserWay -->
+    <script src="https://cdn.userway.org/widget.js" data-account="2CI6j9fC2f"></script>
+    </body>
+</html>
+
